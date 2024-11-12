@@ -41,7 +41,7 @@ public class TaskWiseMain {
 
         // Display tasks
         System.out.println("All Tasks:");
-        taskManager.getAllTasks().forEach(task -> System.out.println(task));
+        taskManager.getAllTasks().forEach(System.out::println);
 
         // Test EventTask specific functionality
         System.out.println("\nTesting EventTask functionality:");
@@ -61,6 +61,6 @@ public class TaskWiseMain {
         // Remove a task and display again
         taskManager.removeTask(regularTask);
         System.out.println("\nTasks after removal:");
-        taskManager.getAllTasks().forEach(task -> System.out.println(task));
+        taskManager.getAllTasks().forEach(System.out::println);
     }
 }
